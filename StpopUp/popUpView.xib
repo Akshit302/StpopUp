@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="popUpView" customModule="StpopUp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="popUpView" customModule="StpopUp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="258"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ija-ql-3q3">
+                    <rect key="frame" x="0.0" y="0.0" width="299" height="258"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Op-NM-lWF">
+                            <rect key="frame" x="38" y="33" width="208" height="31.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've just displayed this awesome Pop Up View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-wX-MF2">
+                            <rect key="frame" x="0.0" y="76" width="299" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="9aC-AL-T5a">
+                            <rect key="frame" x="8" y="125" width="283" height="117"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="117" id="96I-HE-5nk"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="5Op-NM-lWF" firstAttribute="top" secondItem="ija-ql-3q3" secondAttribute="top" constant="33" id="A3D-dr-fxf"/>
+                        <constraint firstItem="NSH-wX-MF2" firstAttribute="top" secondItem="5Op-NM-lWF" secondAttribute="bottom" constant="11.5" id="Cpd-eK-X3d"/>
+                        <constraint firstItem="9aC-AL-T5a" firstAttribute="leading" secondItem="ija-ql-3q3" secondAttribute="leading" constant="8" id="H5o-Ao-SPg"/>
+                        <constraint firstAttribute="trailing" secondItem="9aC-AL-T5a" secondAttribute="trailing" constant="8" id="M5R-RC-WLK"/>
+                        <constraint firstItem="NSH-wX-MF2" firstAttribute="leading" secondItem="ija-ql-3q3" secondAttribute="leading" id="Xlq-jC-Ahp"/>
+                        <constraint firstItem="5Op-NM-lWF" firstAttribute="leading" secondItem="ija-ql-3q3" secondAttribute="leading" constant="38" id="YdX-Pg-O2b"/>
+                        <constraint firstItem="9aC-AL-T5a" firstAttribute="top" secondItem="NSH-wX-MF2" secondAttribute="bottom" constant="8" symbolic="YES" id="nTV-F2-mOt"/>
+                        <constraint firstAttribute="trailing" secondItem="5Op-NM-lWF" secondAttribute="trailing" constant="53" id="xlc-ve-vWe"/>
+                        <constraint firstAttribute="trailing" secondItem="NSH-wX-MF2" secondAttribute="trailing" id="yek-Pc-AaU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ija-ql-3q3" secondAttribute="bottom" id="1Cv-f8-HPO"/>
+                <constraint firstItem="ija-ql-3q3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Ch-EX-QeX"/>
+                <constraint firstItem="ija-ql-3q3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ak0-zy-ljP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ija-ql-3q3" secondAttribute="trailing" id="jda-6K-ecK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="ija-ql-3q3" id="TGQ-Yr-zel"/>
+            </connections>
+            <point key="canvasLocation" x="132.1875" y="21.12676056338028"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="images" width="178" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
